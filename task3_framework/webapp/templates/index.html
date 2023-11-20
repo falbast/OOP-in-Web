@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of Samples</title>
+  <link href="/static/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="login-form-wrapper">
+  <form id="login-form" method="post">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" required>
+
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" required>
+
+    <button id="login-button">Log in</button>
+  </form>
+</div>
+
+<br>
+
+<table>
+  <tr>
+    <th>ID</th>
+	<th>Predict</th>
+	<th>Seniority</th>
+	<th>Home</th>
+	<th>Time</th>
+	<th>Age</th>
+	<th>Marital</th>
+	<th>Records</th>
+	<th>Job</th>
+	<th>Expenses</th>
+	<th>Income</th>
+	<th>Assets</th>
+	<th>Debt</th>
+	<th>Amount</th>
+	<th>Price</th>
+    <th>Actions</th>
+  </tr>
+
+  {% for sample in samples %}
+    <tr>
+      <td>{{ sample.id }}</td>
+	  <th>{{ sample.predict }}</th>
+	  <th>{{ sample.seniority }}</th>
+	  <th>{{ sample.home }}</th>
+	  <th>{{ sample.time }}</th>
+	  <th>{{ sample.age }}</th>
+	  <th>{{ sample.marital }}</th>
+	  <th>{{ sample.records }}</th>
+	  <th>{{ sample.job }}</th>
+	  <th>{{ sample.expenses }}</th>
+	  <th>{{ sample.income }}</th>
+	  <th>{{ sample.assets }}</th>
+	  <th>{{ sample.debt }}</th>
+	  <th>{{ sample.amount }}</th>
+	  <th>{{ sample.price }}</th>
+      <td><button data-id="{{sample.id}}" class="delete-button">Delete</button></td>
+    </tr>
+  {% endfor %}
+</table>
+
+<hr>
+
+<form id="create-form" method="post">
+  <label for="seniority">Seniority: </label>
+  <input class="small" type="text" name="seniority" id="seniority" required>
+
+  <label for="home">Home: </label>
+  <select id="home" name="home">
+    <option value="1">Tenant</option>
+    <option value="2">Owner</option>
+    <option value="3">Homeless</option>
+  </select>
+
+  <label for="time">Time: </label>
+  <input class="small" type="text" name="time" id="time" required>
+
+  <label for="age">Age: </label>
+  <input class="medium" type="text" name="age" id="age" required>
+
+  <label for="marital">Marital: </label>
+  <select id="marital" name="marital">
+    <option value="1">Single</option>
+    <option value="2">Married</option>
+    <option value="3">Divorced</option>
+  </select>
+
+  <label for="records">Records: </label>
+  <input class="small" type="text" name="records" id="records" required>
+
+  <label for="job">Job: </label>
+  <select id="job" name="job">
+    <option value="1">Full-time</option>
+    <option value="2">Part-time</option>
+    <option value="3">Jobless</option>
+  </select>
+
+  <label for="expenses">Expenses: </label>
+  <input class="large" type="text" name="expenses" id="expenses" required>
+
+  <label for="income">Income: </label>
+  <input class="large" type="text" name="income" id="income" required>
+
+  <label for="assets">Assets: </label>
+  <input class="large" type="text" name="assets" id="assets" required>
+
+  <label for="debt">Debt: </label>
+  <input class="large" type="text" name="debt" id="debt" required>
+
+  <label for="amount">Amount: </label>
+  <input class="large" type="text" name="amount" id="amount" required>
+
+  <label for="price">Price: </label>
+  <input class="large" type="text" name="price" id="price" required>
+
+  <button id="create-button">Create</button>
+</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+<script src="/static/app.js"></script>
+</body>
+</html>
