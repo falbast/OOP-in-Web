@@ -9,7 +9,7 @@ from src.distance.manhattan import ManhattanDistance
 from src.distance.sorensen import SorensenDistance
 from src.exceptions import InvalidSampleError
 from src.hyperparameter import Hyperparameter
-from src.sample.base import BaseSample, MaritalType, HomeType, JobType
+from src.sample.base import BaseSample, HomeType, MaritalType, JobType
 from src.sample.classified import ClassifiedSample
 from src.sample.known import KnownSample
 from src.sample.test import TestSample
