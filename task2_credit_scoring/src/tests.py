@@ -104,7 +104,7 @@ def test_training_data() -> None:
             for k in range(1, 10):
                 classifier = classifier_class(
                     k=k,
-                    distance=distance_class(),  # type: ignore
+                    distance=distance_class(),
                     train_data=some_training_data.training,
                 )
                 h = Hyperparameter(classifier=classifier)
