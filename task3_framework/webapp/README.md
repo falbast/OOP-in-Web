@@ -9,14 +9,14 @@
 
 Проверка тестов:
 
-`cd src && python -m pytest tests.py`
+`cd webapp\src && python -m pytest tests.py`
 
 
 # Web App
 - Подготовка к работе:
 Смена директории
 ```cmd
-cd project_directory
+cd webapp
 ```
 
 Создание виртуального окружения:
