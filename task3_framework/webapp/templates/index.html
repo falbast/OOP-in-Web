@@ -67,55 +67,61 @@
 
 <form id="create-form" method="post">
   <label for="seniority">Seniority: </label>
-  <input class="small" type="text" name="seniority" id="seniority" required>
+  <input class="small" type="text" name="seniority" value=0 id="seniority" required>
 
   <label for="home">Home: </label>
   <select id="home" name="home">
-    <option value="1">Tenant</option>
+    <option value="1">Rent</option>
     <option value="2">Owner</option>
-    <option value="3">Homeless</option>
+    <option value="3">Private</option>
+    <option value="4">Ignore</option>
+    <option value="5">Parents</option>
+    <option value="6">Other</option>
   </select>
 
   <label for="time">Time: </label>
-  <input class="small" type="text" name="time" id="time" required>
+  <input class="small" type="text" name="time" value=0 id="time" required>
 
   <label for="age">Age: </label>
-  <input class="medium" type="text" name="age" id="age" required>
+  <input class="medium" type="text" name="age" value=0 id="age" required>
 
   <label for="marital">Marital: </label>
   <select id="marital" name="marital">
     <option value="1">Single</option>
     <option value="2">Married</option>
-    <option value="3">Divorced</option>
+    <option value="3">Widow</option>
+    <option value="4">Separated</option>
+    <option value="5">Divorced</option>
   </select>
 
   <label for="records">Records: </label>
-  <input class="small" type="text" name="records" id="records" required>
+  <input class="small" type="text" name="records" value=0 id="records" required>
 
   <label for="job">Job: </label>
   <select id="job" name="job">
-    <option value="1">Full-time</option>
+    <option value="1">Fixed</option>
     <option value="2">Part-time</option>
-    <option value="3">Jobless</option>
+    <option value="3">Freelance</option>
+    <option value="4">Others</option>
   </select>
 
   <label for="expenses">Expenses: </label>
-  <input class="large" type="text" name="expenses" id="expenses" required>
+  <input class="large" type="text" name="expenses" value=0 id="expenses" required>
 
   <label for="income">Income: </label>
-  <input class="large" type="text" name="income" id="income" required>
+  <input class="large" type="text" name="income" value=0 id="income" required>
 
   <label for="assets">Assets: </label>
-  <input class="large" type="text" name="assets" id="assets" required>
+  <input class="large" type="text" name="assets" value=0 id="assets" required>
 
   <label for="debt">Debt: </label>
-  <input class="large" type="text" name="debt" id="debt" required>
+  <input class="large" type="text" name="debt" value=0 id="debt" required>
 
   <label for="amount">Amount: </label>
-  <input class="large" type="text" name="amount" id="amount" required>
+  <input class="large" type="text" name="amount" value=0 id="amount" required>
 
   <label for="price">Price: </label>
-  <input class="large" type="text" name="price" id="price" required>
+  <input class="large" type="text" name="price" value=0 id="price" required>
 
   <button id="create-button">Create</button>
 </form>
