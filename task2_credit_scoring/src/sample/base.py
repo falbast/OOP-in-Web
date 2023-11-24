@@ -11,7 +11,7 @@ class HomeType(int, Enum):
     PRIVATE = 3
     IGNORE = 4
     PARENTS = 5
-    OTHER = 6
+    OTHER = 5
 
 
 class MaritalType(int, Enum):
