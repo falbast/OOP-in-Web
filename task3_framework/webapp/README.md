@@ -16,7 +16,7 @@
 - Подготовка к работе:
 Смена директории
 ```cmd
-cd "C:\Users\Random\Desktop\OOP_python\task3_framework\framework\webapp"
+cd project_directory
 ```
 
 Создание виртуального окружения:
@@ -26,7 +26,7 @@ python3 -m venv venv
 
 Активация виртуального окружения
 ```cmd
-venv\Scripts\activate.bat
+venv/Scripts/activate.bat
 ```
 
 Установка WSGI Web-сервер (Используем Waitress вместо GUnicorn, так как используемая ОС - Windows)
