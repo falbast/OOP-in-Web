@@ -6,21 +6,27 @@ from src.exceptions import InvalidSampleError
 
 
 class HomeType(int, Enum):
-    TENANT = 1
+    RENT = 1
     OWNER = 2
-    HOMELESS = 3
+    PRIVATE = 3
+    IGNORE = 4
+    PARENTS = 5
+    OTHER = 6
 
 
 class MaritalType(int, Enum):
     SINGLE = 1
     MARRIED = 2
-    DIVORCED = 3
+    WIDOW = 3
+    SEPARATED = 4
+    DIVORCED = 5
 
 
 class JobType(int, Enum):
-    FULL_TIME = 1
+    FIXED = 1
     PART_TIME = 2
-    JOBLESS = 3
+    FREELANCE = 3
+    OTHERS = 4
 
 
 class BaseSample(BaseModel):
