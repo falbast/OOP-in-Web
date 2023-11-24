@@ -52,13 +52,10 @@ class SampleStorage:
         
         some_training_data = TrainingData(name="train")
         some_training_data.load(
-            raw_rows=[sample | {"age": "wrongage"} for sample in DATA_SAMPLES]
-            )
-        some_training_data.load(
             raw_rows=[
                 sample | {"status": random.choice([True, False])} for sample in DATA_SAMPLES
-                ]
-            )
+            ]
+        )
         classifier = KNNClassifier(
             k=5,
             distance=ManhattanDistance(),
